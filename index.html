@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИнтернетМагазин - Ваш надежный магазин товаров</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ИнтернетМагазин</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#products">Товары</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Добро пожаловать в наш интернет-магазин</h2>
+            <p>Лучшие товары по доступным ценам</p>
+            <a href="#products" class="btn">Смотреть товары</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Наши товары</h2>
+            <div class="product-filter">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="electronics">Электроника</button>
+                <button class="filter-btn" data-category="clothing">Одежда</button>
+                <button class="filter-btn" data-category="home">Для дома</button>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Продукты будут добавлены с помощью JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы предлагаем широкий ассортимент качественных товаров для удовлетворения потребностей наших клиентов. Наша компания работает на рынке уже более 5 лет и за это время завоевала доверие тысяч покупателей.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставка по всей стране в течение 2-3 дней</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия качества</h3>
+                    <p>Все товары проходят проверку качества</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Наша служба поддержки всегда на связи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>ул. Примерная, 123, г. Москва</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+7 (123) 456-78-90</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@internetmagazin.ru</p>
+                </div>
+            </div>
+            <form id="contact-form">
+                <h3>Свяжитесь с нами</h3>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Ваш email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cart-items">
+                <!-- Товары в корзине будут добавлены с помощью JavaScript -->
+            </div>
+            <div class="cart-total">
+                <p>Итого: <span id="cart-total-price">0</span> ₽</p>
+                <button id="checkout-btn" class="btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ИнтернетМагазин. Все права защищены.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
